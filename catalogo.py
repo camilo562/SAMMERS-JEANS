@@ -82,6 +82,7 @@ class Catalogo:
                              precio_min: Optional[float] = None, precio_max: Optional[float] = None) -> List[Producto]:
         """Filtra productos según talla, color o rango de precio."""
         resultado = self.productos
+
         if talla:
             resultado = [p for p in resultado if talla in p.tallas]
         if color:
