@@ -43,7 +43,6 @@ class GestionUsuarios:
 
 
 
-
     def actualizar_usuario(self,nombre = None, correo = None, contraseña =None):        
         for i in self.usuarios:
             if nombre:
